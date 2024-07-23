@@ -10,6 +10,7 @@ const AddMovie = ({addNewMovie}) => {
     title : "",
     description :""  ,
     posterUrl : "",
+    trailer : "",
     rating : 1
   })
   
@@ -56,6 +57,10 @@ const AddMovie = ({addNewMovie}) => {
                 <div className="d-flex flex-column">
                     <label> Poster Url </label>
                     <input type="text" name="posterUrl" onChange={handleChange}/>
+                </div>
+                <div className="d-flex flex-column">
+                    <label> Trailer </label>
+                    <input type="text" name="trailer" onChange={handleChange}/>
                 </div>
                 <div className="d-flex flex-column">
                     <label> Rating </label>

@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 import StarRatingComponent from "react-star-rating-component";
 
 const MovieCard = ({ movie }) => {
@@ -18,7 +19,7 @@ const MovieCard = ({ movie }) => {
           />
         </div>
 
-        <Button variant="dark"> More details </Button>
+        <Button variant="dark"> <Link to={`/movie/${movie.id}`}> More details  </Link>  </Button>
       </Card.Body>
     </Card>
   );
